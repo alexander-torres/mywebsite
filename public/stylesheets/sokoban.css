@@ -1,0 +1,252 @@
+#skin {
+	position: relative;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	transform: translateX(-50%);
+	width: 580px;
+	height: 900px;
+	background: #ddd;
+	text-align: center;
+	color: darkblue;
+	font-family: Arial;
+	border-radius: 20px 10px 100px 20px;
+	overflow: hidden;
+}
+
+#switch {
+	position: absolute;
+	margin: -5px 0 0 70px;
+}
+
+#switch div {
+	background: #ccc;
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	border-top: 2px solid white;
+}
+
+#switch p {
+	position: absolute;
+	margin: -5px 0 0 -8px;
+	background: #ccc;
+	color: #ddd;
+	width: 105px;
+	height: 20px;
+	border-radius: 10px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+#indentV {
+	position: absolute;
+	width: 100%;
+}
+
+#indentV div {
+	background: #bbb;
+	width: 8px;
+	height: 35px;
+	margin: 0 30px 0 40px;
+	border-top: 4px solid white;
+}
+
+#indentV div:first-of-type {
+	float: left;
+}
+
+#indentV div:nth-of-type(2) {
+	float: right;
+}
+
+#indentH {
+	position: absolute;
+	margin-top: 35px;
+	height: 8px;
+	width: 100%;
+	background: #bbb;
+	border-left: 4px solid white;
+	border-right: 4px solid white;
+	box-sizing: border-box;
+}
+
+#screenPlate {
+	display: inline-block;
+	margin-top: 70px;
+	background: slategrey;
+	padding: 35px 80px;
+	border-radius: 20px 20px 75px 20px;
+	color: lightgrey;
+	font-family: TW Cen MT;
+}
+
+#lines {
+	position: absolute;
+	margin: -22px 0 0 -60px;
+	width: 455px;
+	height: 7px;
+	border-top: 2px solid purple;
+	border-bottom: 2px solid darkblue;
+}
+
+#linesText {
+	position: absolute;
+	margin: -22px 0 0 93px;
+	background: inherit;
+	line-height: 7px;
+	padding: 2px 10px 2px 10px;
+}
+
+#screen {
+	text-align: center;
+	line-height: 0;
+	width: 336px;
+	height: 288px;
+}
+
+#batteryLight {
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	background: #0f0;
+	position: absolute;
+	margin: -200px 0 0 -55px;
+}
+
+#batteryText {
+	position: absolute;
+	margin: -170px 0 0 -68px;
+	font-size: 0.9em;
+}
+
+#logo {
+	width: 496px;
+	font-size: 1.5em;
+	margin: 5px auto 0 auto;
+	text-align: left;
+}
+
+#logo em{
+	font-size: 1.5em;
+}
+
+#arrows {
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+	background: lightgrey;
+	margin: 50px 0 0 30px;
+}
+
+#arrows table {
+	border-collapse: collapse;
+	display: inline-block;
+	margin: 20px auto;
+}
+#arrows td {
+	height: 45px;
+	width: 45px;
+}
+
+#arrows tr:nth-of-type(2) td, #arrows td:nth-of-type(2) {
+	background: black;
+}
+
+#buttonArea {
+	position: absolute;
+	transform: rotate(-25deg);
+	margin: -150px 0 0 388px;
+}
+
+#buttonArea div {
+	margin: 0;
+	background: lightgrey;
+	height: 90px;
+	border-radius: 45px;
+}
+
+#buttonArea .abButtons {
+	background: #804;
+	border-radius: 30px;
+	display: inline-block;
+	height: 60px;
+	margin: 15px;
+	width: 60px;
+}
+
+#buttonArea p {
+	margin: 10px 0 0 0;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.ssButtons {
+	display: inline-block;
+	margin: 20px 5px 0 5px;
+	transform: rotate(-25deg);
+}
+
+.ssButtons div {
+	width: 75px;
+	height: 18px;
+	background: grey;
+	border-radius: 16px;
+	border: 7px solid lightgrey;
+}
+
+.ssButtons p {
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+#chamfer {
+	position: absolute;
+	overflow: hidden;
+	width: 270px;
+	height: 70px;
+	background: #ccc;
+	transform: rotate(-25deg);
+	margin: 55px 0 0 343px;
+}
+
+#speaker {
+	position: absolute;
+	margin: -20px 0 0 400px;
+	transform: rotate(-25deg);
+}
+
+#speaker div {
+	display: inline-block;
+	background: #aaa;
+	height: 90px;
+	width: 12px;
+	border-radius: 6px;
+	margin: 0 6px;
+	border-left: 6px solid black;
+	box-sizing: border-box;
+}
+
+#phones {
+	margin: 90px 0 0 270px;
+	position: absolute;
+}
+
+#phones p {
+	margin: 0 0 -5px -30px;
+	background: #ccc;
+	color: #ddd;
+	width: 80px;
+	height: 18px;
+	border-radius: 9px;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+#phones div {
+	background: #ccc;
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	border-bottom: 2px solid white;
+}

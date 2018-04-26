@@ -1,0 +1,33 @@
+<% include ../partials/header %>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link rel='stylesheet' href='/stylesheets/colorgame.css'>
+        
+        <main id='colorgame'>
+            <header>
+        		<h1 class='pad-top'>THE GREAT<br>
+        			<span id="rgbDisplay">RGB</span><br>
+        			GUESSING GAME
+        		</h1>
+        
+        		<div id="stripe">
+        			<button id="reset">New Colors</button>
+        			<span id="message"></span>
+        			<button class="mode">Easy</button>
+        			<button class="mode selected">Hard</button>
+        		</div>
+        	</header>
+
+        	<div class="container pad-bottom">
+        		<div class="square"></div>
+        		<div class="square"></div>
+        		<div class="square"></div>
+        		<div class="square"></div>
+        		<div class="square"></div>
+        		<div class="square"></div>
+        	</div>
+        </main>
+    
+    	<script type="text/javascript" src="/scripts/colorgame.js"></script>
+        
+<% include ../partials/footer %>

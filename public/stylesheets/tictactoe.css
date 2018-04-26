@@ -1,0 +1,72 @@
+#tictactoe {
+    width: 100%;
+    font-family: Verdana;
+    background: #f0f0f0;
+}
+
+#tictactoe h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#tictactoe table {
+  margin: 20px auto 0 auto;
+  border: hidden;
+  border-collapse: collapse;
+}
+
+#tictactoe td {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: 5em;
+  border: 2px solid black;
+}
+
+#tictactoe .container {
+  width: 200px;
+  margin: 20px auto 0 auto;
+}
+
+#tictactoe .marker {
+  float: left;
+  box-sizing: border-box;
+  border: 2px solid rgba(0,0,0,0);
+  border-radius: 5px;
+  background: #cccccc;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5em;
+  width: 46%;
+  margin: 0 2%;
+}
+
+#tictactoe #reset {
+  display: inline-block;
+  margin: 10% 2%;
+  width: 96%;
+  line-height: 1.5em;
+  background: #55ff88;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+#tictactoe .marker:hover, #tictactoe td:hover, #tictactoe #reset:hover {
+  cursor: pointer;
+}
+
+#tictactoe .selected {
+  border: 2px solid black;
+}
+
+#tictactoe .cats {
+  background-image: url(https://lh4.googleusercontent.com/Ohk_fD8nDJqTurWSjLDwVZDILtwhbfISG_IQ0HnL3filnEnaypZYP4rZ5FHgJJpRSvhrghFAnFAjjkGgSBDIe741VGtgVgm7G-onzd3mw6DcU-JHJZyeDAPPemB_2lA-C_Zmllr2);
+  background-size: cover;
+}
+
+#tictactoe .cats td {
+  opacity: 0;
+  border: hidden;
+}
