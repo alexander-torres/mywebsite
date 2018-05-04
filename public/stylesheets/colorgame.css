@@ -11,7 +11,7 @@
 	font-weight: normal;
 	line-height: 1.1;
 	margin: 0;
-	padding-bottom: 20px;
+	padding: 20px 0;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -23,14 +23,14 @@
 #colorgame .container {
 	margin: 0 auto;
 	max-width: 600px;
-	padding-top: 1.66%;
+	padding: 1.66% 0;
 }
 
 #colorgame .square {
 	background: red;
 	border-radius: 15%;
 	display: inline-flex;
-	margin: 1.43%;
+	margin: 1.41%;
 	padding-bottom: 30%;
 	transition: background 0.5s;
 	width: 30%;

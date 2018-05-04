@@ -1,7 +1,38 @@
 <% include partials/header %>
 
-		<main class='pad' id='landing'>
-			<h1>Hello, World!</h1>
+		<main class='pad' id='index'>
+			<a name='top'></a>
+			<h1>Alex Torres</h1>
+
+			<h2 id='projects'>Projects</h2>
+
+			<nav class='inline-nav projects-nav'>
+				<ul>
+					<li>
+						<a href='/projects/colorgame'>Color Game</a>
+					</li>
+
+					<li>
+						<a href='https://codepen.io/abetorvo/pen/zRpRvQ' target='_blank'>Pixel Art Maker</a>
+					</li>
+
+					<li>
+						<a href='/projects/sokoban'>Sokoban</a>
+					</li>
+
+					<li>
+						<a href='/projects/tictactoe'>Tic Tac Toe</a>
+					</li>
+
+					<li>
+						<a href='https://arcane-headland-87495.herokuapp.com/' target='_blank'>YelpCamp</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id='frame'></div>
 		</main>
+
+		<script type='text/javascript' src='scripts/main.js'></script>
 
 <% include partials/footer %>
