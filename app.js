@@ -27,6 +27,10 @@ app.get('/projects/tictactoe', function(req, res){
     res.render('projects/tictactoe');
 });
 
+app.get('*', function(req, res){
+	res.send('Could not find the requested page');
+});
+
 /* ---------- Server ---------- */
 server.listen(process.env.PORT || 8080, process.env.IP || "0.0.0.0", function(){
     let addr = server.address();

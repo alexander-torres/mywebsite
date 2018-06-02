@@ -6,6 +6,7 @@ body {
 
 a {
 	color: inherit;
+	display: block;
 	text-decoration: none;
 }
 
@@ -53,14 +54,40 @@ nav ul {
 	background: #000;
 }
 
-.contact {
-	margin-top: 40px;
-}
-
 .content {
 	margin: 0 auto;
 	max-width: 1150px;
 	padding: 0 10%;
+}
+
+.double-line:before {
+	background: #FFF;
+	content: '';
+	display: block;
+	height: 1px;
+	left: 100%;
+	position: relative;
+	transition: 0.2s;
+	width: 0;
+}
+
+.double-line:hover:before {
+	left: 0;
+	width: 100%;
+}
+
+.double-line:after {
+	background: #FFF;
+	content: '';
+	display: block;
+	height: 1px;
+	left: 0;
+	transition: 0.2s;
+	width: 0;
+}
+
+.double-line:hover:after {
+	width: 100%;
 }
 
 .email.icon {
@@ -246,7 +273,7 @@ nav ul {
 .summary {
 	color: #AAA;
 	font-size: 1.5em;
-	margin: 0;
+	margin: 0 0 40px;
 	max-width: 800px;
 	width: 100%;
 }
@@ -255,6 +282,34 @@ nav ul {
 	background: #222;
 	color: #FFF;
 	padding: 40px 0;
+}
+
+#footer a {
+	padding: 2px 0;
+	text-transform: capitalize;
+}
+
+#footer a.highlight {
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+#footer a.highlight:hover {
+	color: #AAA;
+}
+
+#footer .button {
+	background: unset;
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+
+#footer .nav-main {
+	margin: 0;
+}
+
+#footer .nav-main a:hover {
+	color: #FFF;
 }
 
 #projects .heading {
