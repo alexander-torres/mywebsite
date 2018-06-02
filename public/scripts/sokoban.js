@@ -20,13 +20,13 @@
 	let screen = document.querySelector('#screen');
 
 	window.onkeydown = function(e) {
-		e.preventDefault();
-
 		if (level.gameOn === false) return;
 
 		let key = e.key;
 
 		if (key === "ArrowUp" || key === "ArrowDown" || key === "ArrowRight" || key === "ArrowLeft" ) {
+			e.preventDefault();
+			
 			move(key.slice(5,6));
 			printField();
 		}

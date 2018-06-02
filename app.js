@@ -15,6 +15,10 @@ app.get('/projects/colorgame', function(req, res){
     res.render('projects/colorgame');
 });
 
+app.get('/projects/pixelartmaker', function(req, res){
+    res.render('projects/pixelartmaker');
+});
+
 app.get('/projects/sokoban', function(req, res){
     res.render('projects/sokoban');
 });

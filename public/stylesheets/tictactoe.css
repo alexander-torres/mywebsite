@@ -1,12 +1,15 @@
 #tictactoe {
-    width: 100%;
-    font-family: Verdana;
-    background: #f0f0f0;
+  background: #f0f0f0;
+  box-sizing: border-box;
+  font-family: Verdana;
+  height: 100%;
+  padding: 100px 0;
+  width: 100%;
 }
 
 #tictactoe h1 {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 #tictactoe table {

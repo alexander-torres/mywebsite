@@ -1,0 +1,44 @@
+#pixelartmaker {
+	background: #FFF;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+#pixelartmaker h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+}
+
+#pixelartmaker p {
+	font-weight: bold;
+}
+
+#pixelartmaker input[type=number] {
+	width: 6em;
+}
+
+#pixelartmaker table {
+	border-collapse: collapse;
+	height: 100vw;							/* for mobile friendly resizing */
+  margin: 0 auto;
+	max-height: 500px;
+	max-width: 500px;
+	width: 100vw;								/* for mobile friendly resizing */
+}
+
+#pixelartmaker td {
+	border: 1px solid #000;
+	min-width: 1px;
+	height: 1px;
+}
+
+#pixelartmaker td:hover {
+	box-shadow: inset 0 0 0.5em #000, inset 0 0 3px 4px #FFF;
+}
+
+#pixelartmaker #color, #pixelartmaker #grid, #pixelartmaker #submit {
+	cursor: pointer;
+}

@@ -1,36 +1,117 @@
 <% include partials/header %>
 
-		<main class='pad' id='index'>
-			<a name='top'></a>
-			<h1>Alex Torres</h1>
+		<header>
+			<% include projects/rubik %>
 
-			<h2 id='projects'>Projects</h2>
+			<h1 class='heading'>Alex Torres</h1>
 
-			<nav class='inline-nav projects-nav'>
-				<ul>
-					<li>
-						<a href='/projects/colorgame'>Color Game</a>
-					</li>
+			<div class='summary'>Front End developer with a passion for creatively and efficiently solving problems. I enjoy using math and programming logic to make engaging, user-friendly experiences.</div>
 
-					<li>
-						<a href='https://codepen.io/abetorvo/pen/zRpRvQ' target='_blank'>Pixel Art Maker</a>
-					</li>
+			<div class='contact'>
+				<a class='button' href="mailto:torresalexanderg@gmail.com">
+					<i class='fa fa-envelope' aria-hidden='true'></i>
+					Get in touch
+				</a>
+				<a class='linkedin button' href="https://www.linkedin.com/in/alexander-torres-76b42824/">
+					<i class='fa fa-linkedin-square' aria-hidden='true'></i>
+					Connect on LinkedIn
+				</a>
+			</div>
 
-					<li>
-						<a href='/projects/sokoban'>Sokoban</a>
-					</li>
+			<!-- <div class='fade-bottom'></div> -->
+		</header>
 
-					<li>
-						<a href='/projects/tictactoe'>Tic Tac Toe</a>
-					</li>
+		<main>
+			<div class='content' id='projects'>
+				<h2 class='heading'>Projects</h2>
 
-					<li>
-						<a href='https://arcane-headland-87495.herokuapp.com/' target='_blank'>YelpCamp</a>
-					</li>
-				</ul>
-			</nav>
+				<nav class='nav-projects'>
+					<ul>
+						<li class='sokoban'>
+							<span></span>
+							<a href='/projects/sokoban'>
+								<h3 class='heading'>Sokoban</h3>
 
-			<div id='frame'></div>
+								<p class='summary'>Old school game set in a retro handheld gaming console. This was an exercise in using vanilla JavaScript to make a working game, or at least part of it, and using CSS tricks to make a fun container.</p>
+							</a>
+						</li>
+
+						<li class='colorgame'>
+							<span></span>
+							<a href='/projects/colorgame'>
+								<h3 class='heading'>Color Game</h3>
+
+								<p class='summary'>Do you love trying to guess rgb codes for a specific color? Then you'll enjoy The Great RGB Guessing Game! Check out this simple, vanilla JavaScript based game and put your rgb skills to the test. <em>NOTE: If you are color blind, this may not be for you.</em></p>
+							</a>
+						</li>
+
+						<li class='pixelartmaker'>
+							<span></span>
+							<a href='/projects/pixelartmaker'>
+								<h3 class='heading'>Pixel Art Maker</h3>
+
+								<p class='summary'>because, who doesn't like to make pixel art? This project was an exercise in jQuery, especially jQuery triggers and event delegation. I enjoyed making it as much as I do using it. So go ahead, make your best 8-bit Mario.</p>
+							</a>
+						</li>
+
+						<li class='tictactoe'>
+							<span></span>
+							<a href='/projects/tictactoe'>
+								<h3 class='heading'>Tic Tac Toe</h3>
+
+								<p class='summary'>Simple tic tac toe using vanilla JavaScript and minimal CSS. This was an excercise in conditional logic as well as minimizing the amount of CSS code for more efficient styling.</p>
+							</a>
+						</li>
+
+						<li class='yelpcamp'>
+							<span></span><a href='https://arcane-headland-87495.herokuapp.com/' 
+							target='_blank'>
+								<h3 class='heading'>YelpCamp</h3>
+
+								<p class='summary'>A sample website for cataloging campsites and allowing users to add comments or reviews on each campsite. This site is based on NodeJS and utilizes Express, Mongoose, MongoDB, Passport, and Heroku.</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class='stage'>
+					<div class='project'>
+						<% include projects/colorgame %>
+
+						<div class='exit' onclick='projectClose()'>
+							<span class='line line-1'></span>
+							<span class='line line-2'></span>
+						</div>
+					</div>
+
+					<div class='project'>
+						<% include projects/pixelartmaker %>
+
+						<div class='exit' onclick='projectClose()'>
+							<span class='line line-1'></span>
+							<span class='line line-2'></span>
+						</div>
+					</div>
+
+					<div class='project'>
+						<% include projects/sokoban %>
+
+						<div class='exit' onclick='projectClose()'>
+							<span class='line line-1'></span>
+							<span class='line line-2'></span>
+						</div>
+					</div>
+
+					<div class='project'>
+						<% include projects/tictactoe %>
+
+						<div class='exit' onclick='projectClose()'>
+							<span class='line line-1'></span>
+							<span class='line line-2'></span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<script type='text/javascript' src='scripts/main.js'></script>

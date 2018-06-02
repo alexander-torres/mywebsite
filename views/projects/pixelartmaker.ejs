@@ -1,0 +1,27 @@
+<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+<link rel='stylesheet' href='/stylesheets/pixelartmaker.css'>
+
+<div id='pixelartmaker'>
+	<h1>Lab: Pixel Art Maker</h1>
+
+	<form id='pickSize'>
+		<label for='grid-height'>Grid Height</label>
+		<input id='grid-height' max='167' min='0' name='grid-height' required type='number' value='20'>
+		<label for='grid-width'>Grid Width</label>
+		<input id='grid-width' max='167' min='0' name='grid-width' required type='number' value='20'>
+		<input id='submit' type='submit' value='Submit/Clear'>
+	</form>
+
+	<p>
+		<label for='color'>Pick a Color</label>
+		<input id='color' name='color' type='color'>
+	</p>
+
+	<p>Design Canvas</p>
+
+	<table id='grid'></table>
+</div>
+
+<script crossorigin='anonymous' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' src='http://code.jquery.com/jquery-3.3.1.min.js'></script>
+
+<script type='text/javascript' src='/scripts/pixelartmaker.js'></script>
