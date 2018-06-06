@@ -343,6 +343,45 @@ nav ul {
 	}
 }
 
+@media (max-width: 768px) {
+	.contact .button {
+		margin-bottom: 10px;
+	}
+
+	.nav-projects li {
+		height: unset;
+	}
+
+	.nav-projects li:hover {
+		box-shadow: unset;
+		height: unset;
+		margin: 0 0 75px;
+	}
+
+	.nav-projects li:nth-of-type(n) span {
+		background-position: center;
+		background-size: cover;
+		clip-path: unset;
+		display: block;
+		float: none;
+		height: 300px;
+		shape-outside: unset;
+		-webkit-clip-path: unset;
+	}
+
+	.nav-projects li:nth-of-type(n):hover span {
+		clip-path: unset;
+		display: block;
+		float: none;
+		shape-outside: unset;
+		-webkit-clip-path: unset;
+	}
+
+	.nav-projects li a {
+		padding: 0 30px;
+	}
+}
+
 @media (max-width: 480px) {
 	header {
 		padding-top: 100px;
@@ -360,6 +399,10 @@ nav ul {
 	.nav-main a {
 		font-size: 0.9em;
 		padding: 20px 15px;
+	}
+
+	.nav-projects li:nth-of-type(n) span {
+		height: 200px;
 	}
 }
 
