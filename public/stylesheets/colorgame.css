@@ -6,6 +6,10 @@
 	width: 100%;
 }
 
+#colorgame header {
+	padding: 0;
+}
+
 #colorgame h1 {
 	background: steelblue;
 	color: white;

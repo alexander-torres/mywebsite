@@ -63,7 +63,7 @@ function Space(linksArray, htmlContainer) {
 }
 
 function projectOpen() {
-	let linksArray = document.querySelectorAll('.nav-projects li');
+	let linksArray = document.querySelectorAll('.nav-projects a');
 	let projectsArray = document.querySelectorAll('.project');
 	let stage = document.querySelector('#projects .stage');
 
@@ -73,7 +73,12 @@ function projectOpen() {
 		link.addEventListener(
 			'click',
 			function(e) {
-				e.preventDefault();
+				if (document.querySelector('#' + this.className)) {
+					e.preventDefault();
+				} else {
+					return
+				}
+
 				let project = document.querySelector('#' + this.className).parentNode;
 				let visibleProject = document.querySelector('#projects .stage .visible');
 
@@ -111,11 +116,11 @@ function projectClose() {
 }
 
 function decorateLinks() {
-	let linksArray = document.querySelectorAll('.nav-projects li');
+	let linksArray = document.querySelectorAll('.nav-projects a');
 
 	for (let i=0; i < linksArray.length; i++) {
 		let url = linksArray[i].className;
-		let span = linksArray[i].querySelector('span');
+		let span = linksArray[i].querySelector('.preview');
 
 		span.style.backgroundImage = 'url(/images/' + url + '.jpg)';
 	}
